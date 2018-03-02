@@ -10,7 +10,7 @@ Input file assumed to be"
 
 GRAV = 9.81
 
-file = "data/processed_data/sample3.csv"
+file = "sampleD.csv"
 
 data = []
 with open(file, "r") as input_file:
@@ -21,6 +21,7 @@ with open(file, "r") as input_file:
         if line[0] is not "#":
             # split by "," then reverse arrangement to x, y, z axis
             d = line.split(",")[::-1]
+            d = map(lambda x: str(float(x) * 1.0 / 100.0) + "G", d)  # tempo conversion
             # remove last char which is "G" and convert to ms2 and round to 2dp
             data += [map(lambda x: round(float(x.strip()[:-1]) * GRAV, 2), d)]
 

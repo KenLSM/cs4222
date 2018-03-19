@@ -54,15 +54,17 @@
 // #include "dev/button-sensor.h"
 // #include "dev/leds.h"
 
-#define MAX_RETRANSMISSIONS 4
-#define NUM_HISTORY_ENTRIES 4
+#define MAX_RETRANSMISSIONS 20
+#define NUM_HISTORY_ENTRIES 20
 #define EXT_FLASH_BASE_ADDR_SENSOR_DATA       0 
 #define EXT_FLASH_MEMORY_END_ADDRESS          0x400010 // 4194320B
 #define EXT_FLASH_BASE_ADDR       0
 #define EXT_FLASH_SIZE            4*1024*1024
 #define RECEIVER_ID_1         235
 #define RECEIVER_ID_2         137 // 137
-#define SENDSIZE              4
+#define DATA_SIZE             1024 // 32 * 1024
+#define DATA_SEND_SIZE         4
+#define BUFF_SIZE             DATA_SEND_SIZE * 1
 /*---------------------------------------------------------------------------*/
 PROCESS(test_runicast_process, "runicast test");
 AUTOSTART_PROCESSES(&test_runicast_process);
@@ -77,6 +79,8 @@ struct history_entry {
 };
 LIST(history_table);
 MEMB(history_mem, struct history_entry, NUM_HISTORY_ENTRIES);
+static int data_next = 0;
+static uint8_t input_data_buf[BUFF_SIZE];
 /*---------------------------------------------------------------------------*/
 static void
 recv_runicast(struct runicast_conn *c, const linkaddr_t *from, uint8_t seqno)
@@ -107,14 +111,18 @@ recv_runicast(struct runicast_conn *c, const linkaddr_t *from, uint8_t seqno)
     /* Update existing history entry */
     e->seq = seqno;
   }
-
+  // uint8_t* buf = (uint8_t *)packetbuf_dataptr();
+  // packetbuf_copyto(4, buf);
   printf("runicast message received from %d.%d, seqno %d, data: %s\n",
-	 from->u8[0], from->u8[1], seqno, (char *)packetbuf_dataptr());
+   from->u8[0], from->u8[1], seqno, (uint8_t *)packetbuf_dataptr());
+	 // from->u8[0], from->u8[1], seqno, buf[0], buf[1], buf[2], buf[3], sizeof(buf));
   
 }
 static void
 sent_runicast(struct runicast_conn *c, const linkaddr_t *to, uint8_t retransmissions)
 {
+
+  data_next += DATA_SEND_SIZE;
   printf("runicast message sent to %d.%d, retransmissions %d\n",
 	 to->u8[0], to->u8[1], retransmissions);
 }
@@ -138,8 +146,10 @@ PROCESS_THREAD(test_runicast_process, ev, data)
   runicast_open(&runicast, 144, &runicast_callbacks);
 
   // .2 add receiver print data
-  // .3 add read from ext, .1 fix new line .2 debug s output
-  printf("Begin: 0.3.1\n"); 
+  // .3 add read from ext, .1 fix new line .2 debug s output .3 char sprintf
+  // .4 data_next
+  // .5 section by 1024
+  printf("Begin: 0.5\n"); 
 
   /* OPTIONAL: Sender history */
   list_init(history_table);
@@ -157,36 +167,36 @@ PROCESS_THREAD(test_runicast_process, ev, data)
     printf("Failed to open flash??\n");
   }
   // end data fill
-  // ext_flash_erase(EXT_FLASH_BASE_ADDR, 3000);
+  ext_flash_erase(EXT_FLASH_BASE_ADDR, DATA_SIZE);
   
   // Create 32KB worth of data
-  int length = 300; // 32 * 1024;
-  uint8_t data[300];
-  // for (int i = 0; i < length; i+= 4) {
-  //   data[0] = i % 256;
-  //   data[1] = (i + 1) % 256;
-  //   data[2] = (i + 2) % 256;
-  //   data[3] = (i + 3) % 256;
-  //   if (ext_flash_write(i, 4, (uint8_t *)&data)) {
-  //     printf("%d %d %d %d\n", data[0], data[1], data[2], data[3]);
-  //   }
-  // }
+  // input_data_buf = malloc(64 * sizeof(uint8_t));
+
+  // static uint8_t asd[64];
+  // input_data_buf = asd; // malloc(64 * sizeof(uint8_t));
+
+  for (int i = 0; i < DATA_SIZE; i+= 4) {
+    input_data_buf[0] = i % 256;
+    input_data_buf[1] = (i + 1) % 256;
+    input_data_buf[2] = (i + 2) % 256;
+    input_data_buf[3] = (i + 3) % 256;
+    if (ext_flash_write(i, DATA_SEND_SIZE, (uint8_t *)&input_data_buf)) {
+      printf("%d %d %d %d %d\n", i, input_data_buf[0], input_data_buf[1], input_data_buf[2], input_data_buf[3]);
+    }
+  }
   // end data fill
-  // for (int i = 0; i < length; i+= 4) {
-    if(ext_flash_read(0, 300, (uint8_t *)&data))
-      printf("%d %d %d %d\n", data[0], data[1], data[2], data[3]);
-  // }
+  for (int i = 0; i < DATA_SIZE; i+= 4) {
+    if(ext_flash_read(i, BUFF_SIZE, (uint8_t *)&input_data_buf))
+      printf("%d %d %d %d\n", input_data_buf[0], input_data_buf[1], input_data_buf[2], input_data_buf[3]);
+  }
+  ext_flash_close();
 
-  printf("%s\n", linkaddr_node_addr.u8[0]);
-  printf("%s\n", linkaddr_node_addr.u8[1]);
-
-  int sendLoc = 0;
   while(1) {
     static struct etimer et;
 
-    etimer_set(&et, 1*CLOCK_SECOND);
+    etimer_set(&et, CLOCK_SECOND / 2);
     PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&et));
-
+    ext_flash_open();
     if(!runicast_is_transmitting(&runicast)) {
       linkaddr_t recv;
 
@@ -194,8 +204,31 @@ PROCESS_THREAD(test_runicast_process, ev, data)
       // ext_flash_read(sendLoc, 4, (uint8_t *)&data);
       // sendLoc = sendLoc + 4;
       // printf("%d\n", sendLoc);
-      printf("%d %d %d %d\n", data[0], data[1], data[2], data[3]);
-      packetbuf_copyfrom("data", 4);
+      
+      // static uint8_t data_inner[2*DATA_SEND_SIZE];
+
+
+      if (data_next % BUFF_SIZE == 0) {
+        if (ext_flash_read(data_next, BUFF_SIZE, (uint8_t *)&input_data_buf)) {
+          printf(">>>>>>>>>>next: %d\n", data_next);
+          printf("%d %d %d %d\n", input_data_buf[0], input_data_buf[1], input_data_buf[2], input_data_buf[3]);
+        } else {
+          printf("@@@@@@@@@@fail: %d %d\n", data_next, BUFF_SIZE);
+        }
+      }
+
+      ext_flash_close();
+      static char buff[100];
+      sprintf(buff, "%d %d %d %d",
+        input_data_buf[data_next % BUFF_SIZE],
+        input_data_buf[(data_next % BUFF_SIZE) + 1],
+        input_data_buf[(data_next % BUFF_SIZE) + 2],
+        input_data_buf[(data_next % BUFF_SIZE) + 3]);
+
+      printf("data_next: %d of %d | %s\n", data_next, DATA_SIZE, buff);
+      // packetbuf_copyfrom(buff, strlen(buff) + 1);
+      packetbuf_copyfrom(buff, strlen(buff) + 1);
+
       recv.u8[0] = RECEIVER_ID_1;
       recv.u8[1] = RECEIVER_ID_2;
 

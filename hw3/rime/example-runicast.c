@@ -63,7 +63,7 @@
 #define RECEIVER_ID_1         235
 #define RECEIVER_ID_2         137 // 137
 #define DATA_SIZE             32 * 1024 // total file size: 32KB
-#define DATA_SEND_SIZE        4
+#define DATA_SEND_SIZE        100
 #define BUFF_SIZE             DATA_SEND_SIZE * 1
 /*---------------------------------------------------------------------------*/
 PROCESS(test_runicast_process, "runicast test");
@@ -113,8 +113,11 @@ recv_runicast(struct runicast_conn *c, const linkaddr_t *from, uint8_t seqno)
   }
   // uint8_t* buf = (uint8_t *)packetbuf_dataptr();
   // packetbuf_copyto(4, buf);
-  printf("runicast message received from %d.%d, seqno %d, data: %s\n",
-   from->u8[0], from->u8[1], seqno, (uint8_t *)packetbuf_dataptr());
+  static uint8_t buf[BUFF_SIZE + 1];
+  memset(buf, '\0', sizeof(buf));
+  strcpy(buf, packetbuf_dataptr());
+  printf("runicast message received from %d.%d, seqno %d, data: %s length: %d\n",
+   from->u8[0], from->u8[1], seqno, (uint8_t *)buf, strlen(buf));
 	 // from->u8[0], from->u8[1], seqno, buf[0], buf[1], buf[2], buf[3], sizeof(buf));
   
 }
@@ -149,7 +152,7 @@ PROCESS_THREAD(test_runicast_process, ev, data)
   // .3 add read from ext, .1 fix new line .2 debug s output .3 char sprintf
   // .4 data_next
   // .5 section by 1024
-  // .6 char everything (1byte)
+  // .6 char everything (1byte) .1 increase charv 1
   printf("Begin: 0.6\n"); 
 
   /* OPTIONAL: Sender history */
@@ -171,19 +174,20 @@ PROCESS_THREAD(test_runicast_process, ev, data)
   
   // Create DATA_SIZE worth of data
 
-  for (int i = 0; i < DATA_SIZE; i+= 4) {
-    input_data_buf[0] = i % 256;
-    input_data_buf[1] = (i + 1) % 256;
-    input_data_buf[2] = (i + 2) % 256;
-    input_data_buf[3] = (i + 3) % 256;
-    if (ext_flash_write(i, 4, (uint8_t *)&input_data_buf)) { // write 4 bytes
-      printf("%d %d %d %d %d\n", i, input_data_buf[0], input_data_buf[1], input_data_buf[2], input_data_buf[3]);
+  for (int i = 0; i < DATA_SIZE; i+= 3) {
+    static char gen_buf[3];
+    sprintf(gen_buf, "%02d", i % 100);
+    input_data_buf[0] = gen_buf[0];
+    input_data_buf[1] = gen_buf[1];
+    input_data_buf[2] = ',';
+    if (ext_flash_write(i, 3, (uint8_t *)&input_data_buf)) { // write 4 bytes
+      printf("%d %d %d %d %d\n", i, input_data_buf[0], input_data_buf[1], input_data_buf[2]);
     }
   }
   // end data fill
-  for (int i = 0; i < DATA_SIZE; i+= 4) {
-    if(ext_flash_read(i, 4, (uint8_t *)&input_data_buf))  // test read 4 bytes
-      printf("%d %d %d %d\n", input_data_buf[0], input_data_buf[1], input_data_buf[2], input_data_buf[3]);
+  for (int i = 0; i < DATA_SIZE; i+= BUFF_SIZE) {
+    if(ext_flash_read(i, BUFF_SIZE, (uint8_t *)&input_data_buf))  // test read 100 bytes
+      printf("%s\n", input_data_buf);
   }
   ext_flash_close();
 
@@ -196,10 +200,14 @@ PROCESS_THREAD(test_runicast_process, ev, data)
     if(!runicast_is_transmitting(&runicast)) {
       linkaddr_t recv;
 
+      if (data_next > DATA_SIZE) {
+        printf("DATA SEND COMPLETE: %d of %d\n", data_next, DATA_SIZE);
+        break;
+      }
 
       if (data_next % BUFF_SIZE == 0) {
         ext_flash_open();
-        memcpy(*input_data_buf, '/0', sizeof(input_data_buf)); // reset to empty
+        memset(input_data_buf, '\0', sizeof(input_data_buf)); // reset to empty
         if (ext_flash_read(data_next, BUFF_SIZE, (uint8_t *)&input_data_buf)) {
           printf("DATA READ PASS: %d %s\n", data_next, input_data_buf);
         } else {

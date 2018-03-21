@@ -1,0 +1,410 @@
+{"value": "Starting Contiki-3.x-3341-g80dbe5c", "nodeid": "11265", "time": "2018-03-21T09:27:15.565790Z"}
+{"value": "With DriverLib v0.47020", "nodeid": "11265", "time": "2018-03-21T09:27:15.567465Z"}
+{"value": "TI CC2650 SensorTag", "nodeid": "11265", "time": "2018-03-21T09:27:15.567885Z"}
+{"value": "IEEE 802.15.4: Yes, Sub-GHz: No, BLE: Yes, Prop: Yes", "nodeid": "11265", "time": "2018-03-21T09:27:15.568221Z"}
+{"value": " Net: Rime", "nodeid": "11265", "time": "2018-03-21T09:27:15.568547Z"}
+{"value": " MAC: nullmac", "nodeid": "11265", "time": "2018-03-21T09:27:15.568876Z"}
+{"value": " RDC: ContikiMAC, Channel Check Interval: 4 ticks", "nodeid": "11265", "time": "2018-03-21T09:27:15.569218Z"}
+{"value": " RF: Channel 11", "nodeid": "11265", "time": "2018-03-21T09:27:15.569637Z"}
+{"value": " Node ID: 11265", "nodeid": "11265", "time": "2018-03-21T09:27:15.570024Z"}
+{"value": "Starting Contiki-3.x-3300-g3c150a5", "nodeid": "11265", "time": "2018-03-21T09:27:15.570381Z"}
+{"value": "With DriverLib v0.47020", "nodeid": "11265", "time": "2018-03-21T09:27:15.570767Z"}
+{"value": "TI CC2650 SensorTag", "nodeid": "11265", "time": "2018-03-21T09:27:15.571138Z"}
+{"value": "IEEE 802.15.4: Yes, Sub-GHz: No, BLE: Yes, Prop: Yes", "nodeid": "11265", "time": "2018-03-21T09:27:15.571470Z"}
+{"value": " Net: sicslowpan", "nodeid": "11265", "time": "2018-03-21T09:27:15.571847Z"}
+{"value": " MAC: CSMA", "nodeid": "11265", "time": "2018-03-21T09:27:15.572230Z"}
+{"value": " RDC: ContikiMAC, Channel Check Interval: 16 ticks", "nodeid": "11265", "time": "2018-03-21T09:27:15.572551Z"}
+{"value": " RF: Channel 25", "nodeid": "11265", "time": "2018-03-21T09:27:15.572928Z"}
+{"value": " Node ID: 11265", "nodeid": "11265", "time": "2018-03-21T09:27:15.573259Z"}
+{"value": "", "nodeid": "11265", "time": "2018-03-21T09:27:15.573562Z"}
+{"value": "", "nodeid": "11265", "time": "2018-03-21T09:27:15.573936Z"}
+{"value": "***********************************", "nodeid": "11265", "time": "2018-03-21T09:27:15.574372Z"}
+{"value": "***********************************", "nodeid": "11265", "time": "2018-03-21T09:27:15.574790Z"}
+{"value": "******** INDRIYA++ TESTBED ********", "nodeid": "11265", "time": "2018-03-21T09:27:15.575242Z"}
+{"value": "***********************************", "nodeid": "11265", "time": "2018-03-21T09:27:15.575663Z"}
+{"value": "***********************************", "nodeid": "11265", "time": "2018-03-21T09:27:15.576102Z"}
+{"value": "", "nodeid": "11265", "time": "2018-03-21T09:27:15.576491Z"}
+{"value": "***********************************", "nodeid": "11265", "time": "2018-03-21T09:27:15.576829Z"}
+{"value": "", "nodeid": "11265", "time": "2018-03-21T09:27:15.577139Z"}
+{"value": "***********************************", "nodeid": "11265", "time": "2018-03-21T09:27:15.577449Z"}
+{"value": "", "nodeid": "11265", "time": "2018-03-21T09:27:15.577771Z"}
+{"value": "***********************************", "nodeid": "11265", "time": "2018-03-21T09:27:15.578095Z"}
+{"value": "", "nodeid": "11265", "time": "2018-03-21T09:27:15.578400Z"}
+{"value": "***********************************", "nodeid": "11265", "time": "2018-03-21T09:27:15.578700Z"}
+{"value": "", "nodeid": "11265", "time": "2018-03-21T09:27:15.579009Z"}
+{"value": "***********************************", "nodeid": "11265", "time": "2018-03-21T09:27:15.579433Z"}
+{"value": "", "nodeid": "11265", "time": "2018-03-21T09:27:15.579742Z"}
+{"value": "***********************************", "nodeid": "11265", "time": "2018-03-21T09:27:15.580043Z"}
+{"value": "", "nodeid": "11265", "time": "2018-03-21T09:27:15.580505Z"}
+{"value": "***********************************", "nodeid": "11265", "time": "2018-03-21T09:27:15.580798Z"}
+{"value": "", "nodeid": "11265", "time": "2018-03-21T09:27:15.581103Z"}
+{"value": "***********************************", "nodeid": "11265", "time": "2018-03-21T09:27:15.581400Z"}
+{"value": "", "nodeid": "11265", "time": "2018-03-21T09:27:15.581696Z"}
+{"value": "", "nodeid": "11265", "time": "2018-03-21T09:27:15.582087Z"}
+{"value": "Starting Contiki-3.x-3300-g3c150a5", "nodeid": "11265", "time": "2018-03-21T09:27:15.582381Z"}
+{"value": "With DriverLib v0.47020", "nodeid": "11265", "time": "2018-03-21T09:27:15.582708Z"}
+{"value": "TIrunicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:15.624755Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:16.188553Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:16.750875Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:17.313650Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:17.875969Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:18.437099Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:20.000941Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:20.562074Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:21.124457Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:21.688279Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:22.251055Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:22.813268Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:23.375839Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:23.938468Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:24.500752Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:25.065297Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:25.624415Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:26.190324Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:26.759345Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:27.311975Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:27.874240Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:28.436809Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:28.975819Z"}
+{"value": "runicast message received from 235.137, seqno 2 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:27:29.966362Z"}
+{"value": "runicast message received from 235.137, seqno 2 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:27:31.026909Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:31.565084Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:32.124289Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:32.709097Z"}
+{"value": "runicast message received from 235.137, seqno 1 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:27:33.683300Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:34.252545Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:34.815117Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:35.377621Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:35.936745Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:36.500623Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:37.031671Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:37.592805Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:38.155447Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:38.721219Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:39.283747Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:39.863523Z"}
+{"value": "runicast message received from 235.137, seqno 0 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:27:40.839360Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:42.406773Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:42.906569Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:44.469267Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:44.968985Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:45.530251Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:46.062534Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:46.624261Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:47.189732Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:47.730095Z"}
+{"value": "runicast message received from 235.137, seqno 1 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:27:48.745421Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:49.315046Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:49.873864Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:50.439787Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:50.998899Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:51.562777Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:52.123931Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:52.707069Z"}
+{"value": "runicast message received from 235.137, seqno 0 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:27:53.682919Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:54.248911Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:54.814525Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:55.377056Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:55.936470Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:56.519534Z"}
+{"value": "runicast message received from 235.137, seqno 1 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:27:57.493780Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:58.056596Z"}
+{"value": "runicast message received from 235.137, seqno 2 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:27:59.057758Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:27:59.623944Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:00.186141Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:00.748660Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:01.314686Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:01.873727Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:02.438358Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:03.000035Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:03.562773Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:04.126990Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:04.689602Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:05.248643Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:05.811173Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:06.373551Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:06.939467Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:07.498599Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:08.081871Z"}
+{"value": "runicast message received from 235.137, seqno 2 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:28:09.057520Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:09.626996Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:10.206865Z"}
+{"value": "runicast message received from 235.137, seqno 0 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:28:11.182405Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:11.748419Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:12.314304Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:12.873547Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:13.439348Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:14.001886Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:14.561032Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:15.123333Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:15.685814Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:16.251729Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:16.810916Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:17.373417Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:17.935853Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:18.498438Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:19.064243Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:19.623292Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:20.189105Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:20.751664Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:21.314438Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:21.873348Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:22.435769Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:22.998260Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:23.560783Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:24.123310Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:24.689012Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:25.248279Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:25.814043Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:26.376628Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:26.935816Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:27.501456Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:28.081490Z"}
+{"value": "runicast message received from 235.137, seqno 2 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:28:29.057097Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:29.626471Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:30.185769Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:30.751660Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:31.310653Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:31.873226Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:32.435575Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:32.998190Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:33.560608Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:34.126556Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:34.685661Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:35.251731Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:35.813861Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:36.373095Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:36.935535Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:37.501417Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:38.063811Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:38.622967Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:39.185584Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:39.748031Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:40.313781Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:40.876177Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:41.435461Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:42.021631Z"}
+{"value": "runicast message received from 235.137, seqno 1 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:28:42.992834Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:43.563833Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:44.122935Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:44.689153Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:45.251139Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:45.813687Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:46.376106Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:46.938690Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:47.497864Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:48.061743Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:48.622886Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:49.188698Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:49.747830Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:51.311737Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:51.876175Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:52.438683Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:53.000959Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:53.560257Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:54.126063Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:54.685291Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:55.251217Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:55.813743Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:56.375996Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:56.935191Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:57.497698Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:58.061602Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:58.622628Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:59.188516Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:28:59.747619Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:00.306401Z"}
+{"value": "runicast message received from 235.137, seqno 2 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:29:01.305064Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:03.873719Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:04.435004Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:04.999658Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:05.560151Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:06.125652Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:06.688554Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:07.250696Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:07.813514Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:08.372492Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:08.938322Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:09.500971Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:10.059843Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:10.625765Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:11.188584Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:11.750643Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:12.317912Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:12.875562Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:13.438260Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:13.999662Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:14.559765Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:15.122330Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:15.684691Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:16.229335Z"}
+{"value": "runicast message received from 235.137, seqno 1 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:29:17.242182Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:17.813224Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:18.372243Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:18.938336Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:19.500536Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:20.063152Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:20.622042Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:21.188083Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:21.750658Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:22.313001Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:22.875715Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:23.437912Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:24.000606Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:24.559468Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:25.125807Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:25.688154Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:26.249285Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:26.812835Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:27.375737Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:27.937984Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:28.499142Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:29.062646Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:29.625697Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:30.187737Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:30.749275Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:31.309532Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:31.875725Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:32.446701Z"}
+{"value": "runicast message received from 235.137, seqno 0 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:29:33.430788Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:33.999153Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:34.562795Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:36.123149Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:36.684402Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:37.250413Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:37.809351Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:38.374120Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:38.937498Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:39.474001Z"}
+{"value": "runicast message received from 235.137, seqno 1 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:29:40.474044Z"}
+{"value": "runicast message received from 235.137, seqno 1 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:29:41.524252Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:42.062571Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:42.624011Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:43.187661Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:43.749003Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:44.312462Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:44.873822Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:45.437745Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:45.998910Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:46.546918Z"}
+{"value": "runicast message received from 235.137, seqno 2 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:29:48.586551Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:49.156017Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:49.719143Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:50.281203Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:50.842482Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:51.406211Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:51.967531Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:52.529602Z"}
+{"value": "runicast message received from 235.137, seqno 1 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:29:53.522892Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:54.080010Z"}
+{"value": "runicast message received from 235.137, seqno 2 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:29:55.086346Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:55.656239Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:56.217507Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:56.781093Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:57.342403Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:57.905906Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:58.467454Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:29:59.051863Z"}
+{"value": "runicast message received from 235.137, seqno 1 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:30:00.022560Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:00.571709Z"}
+{"value": "runicast message received from 235.137, seqno 2 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:30:01.569470Z"}
+{"value": "runicast message received from 235.137, seqno 2 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:30:02.617543Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:04.153813Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:04.718269Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:05.278519Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:05.843306Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:06.393634Z"}
+{"value": "runicast message received from 235.137, seqno 3 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:30:07.398738Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:07.968643Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:08.529940Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:09.092323Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:09.655958Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:10.217255Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:10.780903Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:11.340772Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:11.905510Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:12.467222Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:13.031092Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:13.592219Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:14.155618Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:14.717047Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:15.280956Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:15.842068Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:16.405747Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:16.967013Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:17.530461Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:18.092071Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:18.640208Z"}
+{"value": "runicast message received from 235.137, seqno 3 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:30:19.637768Z"}
+{"value": "runicast message received from 235.137, seqno 3 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:30:20.679832Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:21.249324Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:21.810704Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:22.374252Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:22.935789Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:23.499189Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:24.038745Z"}
+{"value": "runicast message received from 235.137, seqno 1 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:30:25.054638Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:25.623070Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:26.185581Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:26.748188Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:27.310593Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:27.874358Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:28.435521Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:28.998160Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:29.561432Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:30.142401Z"}
+{"value": "runicast message received from 235.137, seqno 2 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:30:31.116903Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:31.686545Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:32.249414Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:32.810442Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:33.373984Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:33.936510Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:34.498072Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:35.061681Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:35.622818Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:36.186730Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:36.751327Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:37.310263Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:37.872907Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:38.457599Z"}
+{"value": "runicast message received from 235.137, seqno 3 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:30:39.429419Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:40.017130Z"}
+{"value": "runicast message received from 235.137, seqno 0 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:30:40.991821Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:41.561393Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:42.122854Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:43.684451Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:44.248839Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:44.810460Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:45.374243Z"}
+{"value": "runicast message received from 235.137, seqno 2 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:30:46.366658Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:46.933807Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:47.499104Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:48.060700Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:48.622754Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:49.186416Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:49.747724Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:50.310120Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:50.872653Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:51.435149Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:51.997693Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:52.558710Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:53.122619Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:53.685202Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:54.247552Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:30:54.785794Z"}
+{"value": "runicast message received from 235.137, seqno 1 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:30:55.785027Z"}
+{"value": "runicast message received from 235.137, seqno 1 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:30:59.866540Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:31:00.371177Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:31:00.935989Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:31:01.498850Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:31:02.058700Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:31:02.623511Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:31:03.184916Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:31:03.733335Z"}
+{"value": "runicast message received from 235.137, seqno 0 (DUPLICATE)", "nodeid": "11265", "time": "2018-03-21T09:31:04.741254Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: 00,03,06,09,12,15,18,21,24,27,30,33,36,39,42,45,48 length: 50", "nodeid": "11265", "time": "2018-03-21T09:31:05.309893Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: ,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,9 length: 50", "nodeid": "11265", "time": "2018-03-21T09:31:05.871013Z"}
+{"value": "runicast message received from 235.137, seqno 3, data: 9,02,05,08,11,14,17,20,23,26,29,32,35,38,41,44,47, length: 50", "nodeid": "11265", "time": "2018-03-21T09:31:06.434844Z"}
+{"value": "runicast message received from 235.137, seqno 0, data: 50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98 length: 50", "nodeid": "11265", "time": "2018-03-21T09:31:06.997311Z"}
+{"value": "runicast message received from 235.137, seqno 1, data: ,01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,4 length: 50", "nodeid": "11265", "time": "2018-03-21T09:31:07.561318Z"}
+{"value": "runicast message received from 235.137, seqno 2, data: 9,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97, length: 50", "nodeid": "11265", "time": "2018-03-21T09:31:08.122374Z"}

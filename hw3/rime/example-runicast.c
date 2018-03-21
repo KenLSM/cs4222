@@ -60,8 +60,8 @@
 #define EXT_FLASH_MEMORY_END_ADDRESS          0x400010 // 4194320B
 #define EXT_FLASH_BASE_ADDR       0
 #define EXT_FLASH_SIZE            4*1024*1024
-#define RECEIVER_ID_1         235
-#define RECEIVER_ID_2         137 // 137
+#define RECEIVER_ID_1         176
+#define RECEIVER_ID_2         1 // 137
 #define DATA_SIZE             32 * 1024 // total file size: 32KB
 #define DATA_SEND_SIZE        100
 #define BUFF_SIZE             DATA_SEND_SIZE * 1

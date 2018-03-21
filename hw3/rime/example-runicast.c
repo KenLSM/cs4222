@@ -63,7 +63,7 @@
 #define RECEIVER_ID_1         44
 #define RECEIVER_ID_2         1 // 137
 #define DATA_SIZE             32 * 1024 // total file size: 32KB
-#define DATA_SEND_SIZE        100
+#define DATA_SEND_SIZE        50
 #define BUFF_SIZE             DATA_SEND_SIZE * 1
 /*---------------------------------------------------------------------------*/
 PROCESS(test_runicast_process, "runicast test");

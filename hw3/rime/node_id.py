@@ -7,5 +7,8 @@ n = int(sys.argv[1])
 
 b = bin(n)
 print 'Given: ' + sys.argv[1]
-print eval(b[0:10])
-print eval('0b' + b[10:])
+print b
+print eval(b[0:-8])
+print b[0:8]
+print b[-8:]
+print eval('0b' + b[-8:])

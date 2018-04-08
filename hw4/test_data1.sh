@@ -1,0 +1,1 @@
+python3 emulator.py -s "/dev/ttyACM0" -f "data_collect_2018_03_20_13_52_12.csv"

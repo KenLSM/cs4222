@@ -1,3 +1,7 @@
+# C make files 
+hw4/obj_srf06-cc26xx
+contiki-srtf06-cc26xx.a
+
 led / optimized / DLL files
 __pycache__/
 *.py[cod]

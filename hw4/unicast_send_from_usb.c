@@ -94,8 +94,8 @@ PROCESS_THREAD(unicast_send_from_usb_process, ev, data){
       printf("%d:received line: %s\n", count,(char *)data);  
 
       linkaddr_t recv;
-      recv.u8[0] = 0;
-      recv.u8[1] = 1;
+      recv.u8[0] = 99;
+      recv.u8[1] = 3;
 
       packetbuf_copyfrom((char *)data, strlen((char *)data) +1);
 

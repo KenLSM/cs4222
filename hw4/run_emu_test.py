@@ -5,13 +5,14 @@ input_file = 'walk_1_prepro/data_collect_2018_03_20_13_52_12.csv'
 
 
 def parser(input):
-    # print(input)
     try:
         l = input.split(',')
-        if l[1] == 'a':
+        if l[1] is 'a':
             d = list(map(float, l[2:5]))
             return SensorData(int(l[0]), l[1], d)
-        # raise Exception('Unknown input type: ' + str(input))
+        if l[1] in ['b', 't', 'h', 'l']:
+            d = float(l[2])
+            return SensorData(int(l[0]), l[1], [d])
         return None
     except Exception:
         return None
@@ -19,7 +20,8 @@ def parser(input):
 
 # return true if sensor data is of type t
 def filter_type(t, sensor_data):
-    return sensor_data._type == t
+    # print(sensor_data._type)
+    return sensor_data._type is t
 
 
 # return true if sensor data is between time
@@ -43,11 +45,11 @@ with open(input_file, 'r') as f:
             parsed_set += [parser(d)]
 
 d = get_range(0, 600000, parsed_set)
-d = get_type('a', d)
+# d = get_type('b', d)
 
 k_class = StateMachineClassifier()
 
 print(len(d))
 
 for ds in d[::1]:
-    k_class.classify(ds)
+    k_class.classify([ds])

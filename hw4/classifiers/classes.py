@@ -28,8 +28,8 @@ class SensorData:
     values = None  # list of values
 
     def __init__(self, time, _type, values):
-        assert type(values) is list
-        assert _type in DATA_TYPES
+        assert type(values) is list, 'values is not list'
+        assert _type in DATA_TYPES, '_type is unknown'
         self.time = time
         self._type = _type
         self.values = values

@@ -11,6 +11,7 @@ def pow2(a):
 def minus(l, r):
     return [i - j for i, j in zip(l, r)]
 
+
 # Idle ? WALKING
 # Idea 1:
 # Change is a lot when WALKING
@@ -25,9 +26,22 @@ SWITCH_2_IDLE_THRESHOLD = 0.1
 # Idea:
 # Will have change in barometer values
 # Compare value with previous, sum of moving average, do threshold.
+# Barometer can jump around, which usually doens't make sense, will need to damp it down
 FLOOR_WINDOW_SIZE = 20
+BARO_DAMP_THRESHOLD = 0.2
+BARO_DAMP_FACTOR = 0.00001
 SWITCH_2_CHANGE_FLOOR_THRESHOLD = 3e-5
 SWITCH_2_NO_FLOOR_THRESHOLD = 5e-6
+
+# Indoor - Outdoor
+# Idea:
+# Outdoor have way higher values
+# Simple average and thresholding
+IODOOR_WINDOW_SIZE = 20
+LIGHT_DAMP_THRESHOLD = 100
+LIGHT_DAMP_FACTOR = 1
+SWITCH_2_OUTDOOR_THRESHOLD = 300
+SWITCH_2_INDOOR_THRESHOLD = 100
 
 
 class StateMachineClassifier(Classifier):
@@ -39,6 +53,7 @@ class StateMachineClassifier(Classifier):
         self.prev_a = []
         self.baro_data = []
         self.baro_time = []
+        self.light_data = []
         self.moving_a_delta = .0
 
         self._state = State()
@@ -67,13 +82,27 @@ class StateMachineClassifier(Classifier):
         if self._state.isFloorChange:
             if abs(slope) < SWITCH_2_NO_FLOOR_THRESHOLD:
                 self._state.setStateNumber(self._state.getStateNumber() & int(0b011))  # toggle to no floor change
-                print('FLNO. Time: {:8d} Slope: {:.6}'.format(
-                    sensor_data.time, slope))
+                print('FLNO. Time: {:8d} Slope: {:.8f}'.format(
+                    sensor_data.time, abs(slope)))
             return
         if abs(slope) > SWITCH_2_CHANGE_FLOOR_THRESHOLD:
             self._state.setStateNumber(self._state.getStateNumber() | int(0b100))  # toggle to no floor change
-            print('FLCH. Time: {:8d} Slope: {:.6}'.format(
-                sensor_data.time, slope))
+            print('FLCH. Time: {:8d} Slope: {:.8f}'.format(
+                sensor_data.time, abs(slope)))
+
+    def decide_iodoor_state(self, sensor_data):
+        avg_l = sum(self.light_data[-IODOOR_WINDOW_SIZE:]) / len(self.light_data[-IODOOR_WINDOW_SIZE:])
+        # print(avg_l)
+        if self._state.isIndoor:
+            if avg_l > SWITCH_2_OUTDOOR_THRESHOLD:
+                self._state.setStateNumber(self._state.getStateNumber() & int(0b101))  # toggle to no floor change
+                print('OTDR. Time: {:8d} Average: {:.8f}'.format(
+                    sensor_data.time, avg_l))
+            return
+        if avg_l < SWITCH_2_INDOOR_THRESHOLD:
+            self._state.setStateNumber(self._state.getStateNumber() | int(0b010))  # toggle to no floor change
+            print('INDR. Time: {:8d} Average: {:.8f}'.format(
+                sensor_data.time, avg_l))
 
     def classify_single_data(self, sensor_data):
         self.counter += 1
@@ -83,18 +112,35 @@ class StateMachineClassifier(Classifier):
             delta_sum = sum(map(pow2, delta_v))
             self.prev_a = cur_a
             self.moving_a_delta = self.moving_a_delta * WALK_DIM_FACTOR + delta_sum
-            # if self.counter % 500 is 1:
-            #     print('Time: {:8d} Avg: {:.6} Cur: {:.6f}'.format(
-            #         sensor_data.time, self.moving_a_delta, delta_sum))
             self.decide_moving_state(sensor_data, delta_sum)
 
             return
         if sensor_data._type == 'b':
             cur_b = sensor_data.values
+            try:
+                delta_b = cur_b[0] - self.baro_data[-1]
+                if delta_b > BARO_DAMP_THRESHOLD and self.baro_data[-1]:
+                    cur_b = [self.baro_data[-1] + delta_b * BARO_DAMP_FACTOR]
+            except IndexError:  # initial entry
+                pass
             self.baro_data += cur_b
             self.baro_time += [sensor_data.time]
 
             self.decide_floor_state(sensor_data)
+
+            return
+
+        if sensor_data._type == 'l':
+            cur_l = sensor_data.values
+            try:
+                delta_l = cur_l[0] - self.light_data[-1]
+                if delta_l > LIGHT_DAMP_THRESHOLD and self.light_data[-1]:
+                    cur_l = [self.light_data[-1] + delta_l * LIGHT_DAMP_FACTOR]
+            except IndexError:  # initial entry
+                pass
+            self.light_data += cur_l
+
+            self.decide_iodoor_state(sensor_data)
 
             return
         # raise Exception('IDK WHAT TO DO WITH THIS INPUT: ' + sensor_data)

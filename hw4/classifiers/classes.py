@@ -23,11 +23,16 @@ class State:
 
 
 class SensorData:
-    time = None # Integer
-    type = None # One of the values from DATA_TYPES
-    values = None # list of values
+    time = None  # Integer
+    _type = None  # One of the values from DATA_TYPES
+    values = None  # list of values
 
-    def __init__(self, time, type, values):
+    def __init__(self, time, _type, values):
+        assert type(values) is list, 'values is not list'
+        assert _type in DATA_TYPES, '_type is unknown'
         self.time = time
-        self.type = type
+        self._type = _type
         self.values = values
+
+    def __repr__(self):
+        return 'time: %s type: %s values: %s' % (self.time, self._type, self.values)

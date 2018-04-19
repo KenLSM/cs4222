@@ -52,7 +52,6 @@ def on_message(client, userdata, msg):
     global refresh_timer
     payload = msg.payload.decode("utf-8")
     sensor_data = parse_payload(payload)
-    print(sensor_data)
     data_semaphore.acquire()
     data_buffer.append(sensor_data)
     if len(data_buffer) >= MAX_BUFFER_WINDOW:
@@ -79,7 +78,6 @@ def process_data(sensor_datas):
 
 # Periodic callback to refresh data buffer
 def on_refresh():
-    print("Periodically refreshing")
     data_semaphore.acquire()
     if len(data_buffer) is not 0:
         process_data(data_buffer[:])

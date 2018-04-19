@@ -43,6 +43,15 @@ LIGHT_DAMP_FACTOR = 1
 SWITCH_2_OUTDOOR_THRESHOLD = 150
 SWITCH_2_INDOOR_THRESHOLD = 50
 
+DEBUG = False
+
+STR_WALK = '%s,WALKING'
+STR_IDLE = '%s,IDLE'
+STR_FLCH = '%s,FLOORCHANGE'
+STR_FLNO = '%s,NOFLOORCHANGE'
+STR_INDR = '%s,INDOOR'
+STR_OUDR = '%s,OUTDOOR'
+
 
 class StateMachineClassifier(Classifier):
     prev_a = None
@@ -68,13 +77,18 @@ class StateMachineClassifier(Classifier):
         if self._state.isWalking:
             if self.moving_a_delta < SWITCH_2_IDLE_THRESHOLD:
                 self._state.setStateNumber(self._state.getStateNumber() & int(0b110))  # toggle to idle
-                print('IDLE. Time: {:8d} Avg: {:.6} Sum: {:.6}'.format(
-                    sensor_data.time, self.moving_a_delta, delta_sum))
+                if DEBUG:
+                    print('IDLE. Time: {:8d} Avg: {:.6} Sum: {:.6}'.format(
+                        sensor_data.time, self.moving_a_delta, delta_sum))
+                print(STR_IDLE % sensor_data.time)
             return
+
         if self.moving_a_delta > SWITCH_2_WALK_THRESHOLD:
             self._state.setStateNumber(self._state.getStateNumber() | int(0b001))  # toggle to walking
-            print('WALK. Time: {:8d} Avg: {:.6} Sum: {:.6}'.format(
-                sensor_data.time, self.moving_a_delta, delta_sum))
+            if DEBUG:
+                print('WALK. Time: {:8d} Avg: {:.6} Sum: {:.6}'.format(
+                    sensor_data.time, self.moving_a_delta, delta_sum))
+            print(STR_WALK % sensor_data.time)
 
     def decide_floor_state(self, sensor_data):
         slope, intercept, r_value, p_value, std_err = stats.linregress(
@@ -82,27 +96,35 @@ class StateMachineClassifier(Classifier):
         if self._state.isFloorChange:
             if abs(slope) < SWITCH_2_NO_FLOOR_THRESHOLD:
                 self._state.setStateNumber(self._state.getStateNumber() & int(0b011))  # toggle to no floor change
-                print('FLNO. Time: {:8d} Slope: {:.8f}'.format(
-                    sensor_data.time, abs(slope)))
+                if DEBUG:
+                    print('FLNO. Time: {:8d} Slope: {:.8f}'.format(
+                        sensor_data.time, abs(slope)))
+                print(STR_FLNO % sensor_data.time)
             return
+
         if abs(slope) > SWITCH_2_CHANGE_FLOOR_THRESHOLD:
             self._state.setStateNumber(self._state.getStateNumber() | int(0b100))  # toggle to no floor change
-            print('FLCH. Time: {:8d} Slope: {:.8f}'.format(
-                sensor_data.time, abs(slope)))
+            if DEBUG:
+                print('FLCH. Time: {:8d} Slope: {:.8f}'.format(
+                    sensor_data.time, abs(slope)))
+            print(STR_FLCH % sensor_data.time)
 
     def decide_iodoor_state(self, sensor_data):
         avg_l = sum(self.light_data[-IODOOR_WINDOW_SIZE:]) / len(self.light_data[-IODOOR_WINDOW_SIZE:])
-        # print(avg_l)
         if self._state.isIndoor:
             if avg_l > SWITCH_2_OUTDOOR_THRESHOLD:
                 self._state.setStateNumber(self._state.getStateNumber() & int(0b101))  # toggle to no floor change
-                print('OTDR. Time: {:8d} Average: {:.8f}'.format(
-                    sensor_data.time, avg_l))
+                if DEBUG:
+                    print('OUDR. Time: {:8d} Average: {:.8f}'.format(
+                        sensor_data.time, avg_l))
+                print(STR_OUDR % sensor_data.time)
             return
         if avg_l < SWITCH_2_INDOOR_THRESHOLD:
             self._state.setStateNumber(self._state.getStateNumber() | int(0b010))  # toggle to no floor change
-            print('INDR. Time: {:8d} Average: {:.8f}'.format(
-                sensor_data.time, avg_l))
+            if DEBUG:
+                print('INDR. Time: {:8d} Average: {:.8f}'.format(
+                    sensor_data.time, avg_l))
+            print(STR_INDR % sensor_data.time)
 
     def classify_single_data(self, sensor_data):
         self.counter += 1

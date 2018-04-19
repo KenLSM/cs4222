@@ -27,10 +27,10 @@ SWITCH_2_IDLE_THRESHOLD = 0.1
 # Will have change in barometer values
 # Compare value with previous, sum of moving average, do threshold.
 # Barometer can jump around, which usually doens't make sense, will need to damp it down
-FLOOR_WINDOW_SIZE = 20
+FLOOR_WINDOW_SIZE = 5
 BARO_DAMP_THRESHOLD = 0.2
-# BARO_DAMP_FACTOR = 0.00001
-BARO_DAMP_FACTOR = 1
+BARO_DAMP_FACTOR = 0.00001
+# BARO_DAMP_FACTOR = 1
 SWITCH_2_CHANGE_FLOOR_THRESHOLD = 3e-5
 SWITCH_2_NO_FLOOR_THRESHOLD = 5e-6
 

@@ -10,7 +10,7 @@ parser.add_argument("-f", "--file", dest="filepath", help="file containing the c
 
 args = parser.parse_args()
 
-ACCEPTABLE_DELAY_MARGIN = 50 #millis
+ACCEPTABLE_DELAY_MARGIN = 500 #millis
 TS=0
 print("**********************************************************************")
 print("PRESS THE RESET BUTTON OF THE USB-CONNECTED SENSORTAG TO START SENDING")
@@ -39,7 +39,7 @@ try:
 
 		# CASE 1: EMULATOR TIME IS BEHIND WEARABLE TIME 
 		while( (emulator_now - emulator_start_time + ACCEPTABLE_DELAY_MARGIN) < (wearable_now - wearable_start_time)):
-			sleep(0.0005)
+			sleep(0.00005)
 			emulator_now = round(time()*1000)
 
 		# CASE 2: WEARABLE TIME IS BEHIND EMULATOR TIME

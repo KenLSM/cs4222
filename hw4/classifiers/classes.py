@@ -21,6 +21,9 @@ class State:
     def getStateNumber(self):
         return self.isFloorChange * 4 + self.isIndoor * 2 + self.isWalking
 
+    def __repr__(self):
+        return 'floorChange: %s indoor: %s walking: %s' % (self.isFloorChange, self.isIndoor, self.isWalking)
+
 
 class SensorData:
     time = None  # Integer
@@ -35,4 +38,15 @@ class SensorData:
         self.values = values
 
     def __repr__(self):
-        return 'time: %s type: %s values: %s' % (self.time, self._type, self.values)
+        return '%s,%s,%s,%s,%s' \
+               % (self.time,
+                  self._type,
+                  self.sanitize_output(self.values, 0),
+                  self.sanitize_output(self.values, 1),
+                  self.sanitize_output(self.values, 2))
+
+    def sanitize_output(self, values, idx):
+        if idx >= len(values):
+            return ''
+        else:
+            return values[idx]

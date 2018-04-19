@@ -27,10 +27,9 @@ SWITCH_2_IDLE_THRESHOLD = 0.1
 # Will have change in barometer values
 # Compare value with previous, sum of moving average, do threshold.
 # Barometer can jump around, which usually doens't make sense, will need to damp it down
-FLOOR_WINDOW_SIZE = 5
+
 BARO_DAMP_THRESHOLD = 0.2
 BARO_DAMP_FACTOR = 0.00001
-# BARO_DAMP_FACTOR = 1
 SWITCH_2_CHANGE_FLOOR_THRESHOLD = 3e-5
 SWITCH_2_NO_FLOOR_THRESHOLD = 5e-6
 
@@ -38,10 +37,10 @@ SWITCH_2_NO_FLOOR_THRESHOLD = 5e-6
 # Idea:
 # Outdoor have way higher values
 # Simple average and thresholding
-IODOOR_WINDOW_SIZE = 20
+
 LIGHT_DAMP_THRESHOLD = 100
 LIGHT_DAMP_FACTOR = 1
-SWITCH_2_OUTDOOR_THRESHOLD = 150
+SWITCH_2_OUTDOOR_THRESHOLD = 250
 SWITCH_2_INDOOR_THRESHOLD = 50
 
 DEBUG = False
@@ -55,6 +54,8 @@ STR_OUDR = '%s,OUTDOOR'
 
 DELAY_TIME = 10000
 
+FIXED_VAL = 10000  # 10 seconds window
+
 
 class StateMachineClassifier(Classifier):
     prev_a = None
@@ -63,10 +64,13 @@ class StateMachineClassifier(Classifier):
 
     def __init__(self, window_size=1000):
         self.prev_a = []
+        self.moving_a_delta = .0
+
         self.baro_data = []
         self.baro_time = []
+
         self.light_data = []
-        self.moving_a_delta = .0
+        self.light_time = []
 
         self.io_last_change = 0
         self.fl_last_change = 0
@@ -106,8 +110,12 @@ class StateMachineClassifier(Classifier):
         if self.fl_last_change + DELAY_TIME > sensor_data.time:
             return
 
+        #  only take last X seconds ago
+        time_filtered = list(filter(lambda x: x > (sensor_data.time - FIXED_VAL), self.baro_time))
+
         slope, intercept, r_value, p_value, std_err = stats.linregress(
-            self.baro_time[-FLOOR_WINDOW_SIZE:], self.baro_data[-FLOOR_WINDOW_SIZE:])
+            time_filtered, self.baro_data[-len(time_filtered):])
+
         if self._state.isFloorChange:
             if abs(slope) < SWITCH_2_NO_FLOOR_THRESHOLD:
                 self._state.setStateNumber(self._state.getStateNumber() & int(0b011))  # toggle to no floor change
@@ -130,7 +138,9 @@ class StateMachineClassifier(Classifier):
         if self.io_last_change + DELAY_TIME > sensor_data.time:
             return
 
-        avg_l = sum(self.light_data[-IODOOR_WINDOW_SIZE:]) / len(self.light_data[-IODOOR_WINDOW_SIZE:])
+        time_filtered = list(filter(lambda x: x > (sensor_data.time - FIXED_VAL), self.light_time))
+
+        avg_l = sum(self.light_data[-len(time_filtered):]) / len(time_filtered)
         if self._state.isIndoor:
             if avg_l > SWITCH_2_OUTDOOR_THRESHOLD:
                 self._state.setStateNumber(self._state.getStateNumber() & int(0b101))  # toggle to no floor change
@@ -180,6 +190,7 @@ class StateMachineClassifier(Classifier):
             except IndexError:  # initial entry
                 pass
             self.light_data += cur_l
+            self.light_time += [sensor_data.time]
 
             return self.decide_iodoor_state(sensor_data)
 

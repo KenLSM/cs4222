@@ -21,6 +21,9 @@ class State:
     def getStateNumber(self):
         return self.isFloorChange * 4 + self.isIndoor * 2 + self.isWalking
 
+    def __repr__(self):
+        return 'floorChange: %s indoor: %s walking: %s' % (self.isFloorChange, self.isIndoor, self.isWalking)
+
 
 class SensorData:
     time = None  # Integer

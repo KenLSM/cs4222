@@ -68,7 +68,7 @@ def on_message(client, userdata, msg):
 def process_data(sensor_datas):
     # Sort and pass into classifier a list of sensor data for each time step
     sensor_datas = sorted(sensor_datas, key=lambda sensor_data: sensor_data.time)
-    with open(SENSOR_OUTPUT_FILENAME, 'w+') as f:
+    with open(SENSOR_OUTPUT_FILENAME, 'a') as f:
         for sensor_data in sensor_datas:
             f.write("%s\n" % str(sensor_data))
 

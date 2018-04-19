@@ -52,6 +52,8 @@ STR_FLNO = '%s,NOFLOORCHANGE'
 STR_INDR = '%s,INDOOR'
 STR_OUDR = '%s,OUTDOOR'
 
+DELAY_TIME = 10000
+
 
 class StateMachineClassifier(Classifier):
     prev_a = None
@@ -65,6 +67,10 @@ class StateMachineClassifier(Classifier):
         self.light_data = []
         self.moving_a_delta = .0
 
+        self.io_last_change = 0
+        self.fl_last_change = 0
+        self.wl_last_change = 0
+
         self._state = State()
         self.counter = 0
         pass
@@ -74,6 +80,9 @@ class StateMachineClassifier(Classifier):
             self.classify_single_data(sensor_data)
 
     def decide_moving_state(self, sensor_data, delta_sum):
+        if self.wl_last_change + DELAY_TIME > sensor_data.time:
+            return
+
         if self._state.isWalking:
             if self.moving_a_delta < SWITCH_2_IDLE_THRESHOLD:
                 self._state.setStateNumber(self._state.getStateNumber() & int(0b110))  # toggle to idle
@@ -81,6 +90,7 @@ class StateMachineClassifier(Classifier):
                     print('IDLE. Time: {:8d} Avg: {:.6} Sum: {:.6}'.format(
                         sensor_data.time, self.moving_a_delta, delta_sum))
                 print(STR_IDLE % sensor_data.time)
+                self.wl_last_change = sensor_data.time
             return
 
         if self.moving_a_delta > SWITCH_2_WALK_THRESHOLD:
@@ -89,8 +99,12 @@ class StateMachineClassifier(Classifier):
                 print('WALK. Time: {:8d} Avg: {:.6} Sum: {:.6}'.format(
                     sensor_data.time, self.moving_a_delta, delta_sum))
             print(STR_WALK % sensor_data.time)
+            self.wl_last_change = sensor_data.time
 
     def decide_floor_state(self, sensor_data):
+        if self.fl_last_change + DELAY_TIME > sensor_data.time:
+            return
+
         slope, intercept, r_value, p_value, std_err = stats.linregress(
             self.baro_time[-FLOOR_WINDOW_SIZE:], self.baro_data[-FLOOR_WINDOW_SIZE:])
         if self._state.isFloorChange:
@@ -100,6 +114,7 @@ class StateMachineClassifier(Classifier):
                     print('FLNO. Time: {:8d} Slope: {:.8f}'.format(
                         sensor_data.time, abs(slope)))
                 print(STR_FLNO % sensor_data.time)
+                self.fl_last_change = sensor_data.time
             return
 
         if abs(slope) > SWITCH_2_CHANGE_FLOOR_THRESHOLD:
@@ -108,8 +123,12 @@ class StateMachineClassifier(Classifier):
                 print('FLCH. Time: {:8d} Slope: {:.8f}'.format(
                     sensor_data.time, abs(slope)))
             print(STR_FLCH % sensor_data.time)
+            self.fl_last_change = sensor_data.time
 
     def decide_iodoor_state(self, sensor_data):
+        if self.io_last_change + DELAY_TIME > sensor_data.time:
+            return
+
         avg_l = sum(self.light_data[-IODOOR_WINDOW_SIZE:]) / len(self.light_data[-IODOOR_WINDOW_SIZE:])
         if self._state.isIndoor:
             if avg_l > SWITCH_2_OUTDOOR_THRESHOLD:
@@ -118,6 +137,7 @@ class StateMachineClassifier(Classifier):
                     print('OUDR. Time: {:8d} Average: {:.8f}'.format(
                         sensor_data.time, avg_l))
                 print(STR_OUDR % sensor_data.time)
+                self.io_last_change = sensor_data.time
             return
         if avg_l < SWITCH_2_INDOOR_THRESHOLD:
             self._state.setStateNumber(self._state.getStateNumber() | int(0b010))  # toggle to no floor change
@@ -125,6 +145,7 @@ class StateMachineClassifier(Classifier):
                 print('INDR. Time: {:8d} Average: {:.8f}'.format(
                     sensor_data.time, avg_l))
             print(STR_INDR % sensor_data.time)
+            self.io_last_change = sensor_data.time
 
     def classify_single_data(self, sensor_data):
         self.counter += 1
@@ -134,9 +155,8 @@ class StateMachineClassifier(Classifier):
             delta_sum = sum(map(pow2, delta_v))
             self.prev_a = cur_a
             self.moving_a_delta = self.moving_a_delta * WALK_DIM_FACTOR + delta_sum
-            self.decide_moving_state(sensor_data, delta_sum)
+            return self.decide_moving_state(sensor_data, delta_sum)
 
-            return
         if sensor_data._type == 'b':
             cur_b = sensor_data.values
             try:
@@ -148,9 +168,7 @@ class StateMachineClassifier(Classifier):
             self.baro_data += cur_b
             self.baro_time += [sensor_data.time]
 
-            self.decide_floor_state(sensor_data)
-
-            return
+            return self.decide_floor_state(sensor_data)
 
         if sensor_data._type == 'l':
             cur_l = sensor_data.values
@@ -162,7 +180,6 @@ class StateMachineClassifier(Classifier):
                 pass
             self.light_data += cur_l
 
-            self.decide_iodoor_state(sensor_data)
+            return self.decide_iodoor_state(sensor_data)
 
-            return
         # raise Exception('IDK WHAT TO DO WITH THIS INPUT: ' + sensor_data)

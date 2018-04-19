@@ -1,8 +1,9 @@
 from classifiers.classes import SensorData
 from classifiers.state_machine_classifier import StateMachineClassifier
 
-input_file = 'walk_1_prepro/data_collect_2018_03_20_13_52_12.csv'
-# input_file = 'walk_2_prepro/data_collect_2018_03_20_14_08_54.csv'
+# input_file = 'walk_1_prepro/ocean_output.csv'
+# input_file = 'walk_1_prepro/data_collect_2018_03_20_13_52_12.csv'
+input_file = 'walk_2_prepro/data_collect_2018_03_20_14_08_54.csv'
 
 
 def parser(input):
@@ -46,7 +47,7 @@ with open(input_file, 'r') as f:
             parsed_set += [parser(d)]
 
 d = get_range(0, 600000, parsed_set)
-# d = get_type('l', d)
+# d = get_type('b', d)
 
 k_class = StateMachineClassifier()
 

@@ -17,7 +17,7 @@ louis==2.5.3
 lxml==3.3.3
 Mako==0.9.1
 MarkupSafe==0.18
-numpy==1.14.2
+numpy==1.22.0
 oauthlib==0.6.1
 onboard==1.0.1
 oneconf==0.3.7.14.4.1
